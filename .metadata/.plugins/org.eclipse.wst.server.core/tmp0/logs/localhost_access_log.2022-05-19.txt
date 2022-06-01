@@ -1,0 +1,15 @@
+127.0.0.1 - - [19/May/2022:20:16:28 -0300] "GET / HTTP/1.1" 404 1036
+0:0:0:0:0:0:0:1 - - [19/May/2022:20:16:41 -0300] "GET /ProjetoTrilhaWeb HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [19/May/2022:20:16:41 -0300] "GET /ProjetoTrilhaWeb/ HTTP/1.1" 200 1660
+0:0:0:0:0:0:0:1 - - [19/May/2022:20:16:41 -0300] "GET /ProjetoTrilhaWeb/css/site.css HTTP/1.1" 200 2768
+0:0:0:0:0:0:0:1 - - [19/May/2022:20:16:41 -0300] "GET /ProjetoTrilhaWeb/js/site.js HTTP/1.1" 200 1415
+0:0:0:0:0:0:0:1 - - [19/May/2022:20:16:41 -0300] "GET /ProjetoTrilhaWeb/imgs/geladeira1.png HTTP/1.1" 200 21198
+0:0:0:0:0:0:0:1 - - [19/May/2022:20:16:41 -0300] "GET /ProjetoTrilhaWeb/imgs/geladeira2.png HTTP/1.1" 200 18537
+0:0:0:0:0:0:0:1 - - [19/May/2022:20:16:41 -0300] "GET /ProjetoTrilhaWeb/pages/site/general/cabecalho.html HTTP/1.1" 200 105
+0:0:0:0:0:0:0:1 - - [19/May/2022:20:16:41 -0300] "GET /ProjetoTrilhaWeb/pages/site/general/menu.html HTTP/1.1" 200 355
+0:0:0:0:0:0:0:1 - - [19/May/2022:20:16:41 -0300] "GET /ProjetoTrilhaWeb/pages/site/general/rodape.html HTTP/1.1" 200 38
+0:0:0:0:0:0:0:1 - - [19/May/2022:20:16:41 -0300] "GET /favicon.ico HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [19/May/2022:20:16:41 -0300] "GET /ProjetoTrilhaWeb/imgs/logo.png HTTP/1.1" 200 109630
+0:0:0:0:0:0:0:1 - - [19/May/2022:20:17:44 -0300] "GET /ProjetoTrilhaWeb/pages/site/produtos.html HTTP/1.1" 200 4120
+0:0:0:0:0:0:0:1 - - [19/May/2022:20:17:45 -0300] "GET /ProjetoTrilhaWeb/pages/site/faleconosco.html HTTP/1.1" 200 2382
+0:0:0:0:0:0:0:1 - - [19/May/2022:20:17:46 -0300] "GET /ProjetoTrilhaWeb/index.html HTTP/1.1" 200 1660

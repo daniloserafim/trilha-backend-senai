@@ -1,0 +1,6 @@
+@charset "ISO-8859-1";
+
+.item-box {
+	display: flex;
+	flex-direction: row;
+}

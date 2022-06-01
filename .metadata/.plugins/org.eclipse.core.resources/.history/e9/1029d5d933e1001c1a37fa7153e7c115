@@ -1,0 +1,17 @@
+@charset "ISO-8859-1";
+
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+fieldset {
+	width: 500px;
+}
+
+.item-box {
+	display: flex;
+	flex-direction: row;
+}

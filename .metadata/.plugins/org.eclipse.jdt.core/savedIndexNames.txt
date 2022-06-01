@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\danilo_serafim\Desktop\Backup\.metadata\.plugins\org.eclipse.jdt.core
+414085062.index
+322944043.index
