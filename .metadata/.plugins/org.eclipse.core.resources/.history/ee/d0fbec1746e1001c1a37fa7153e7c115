@@ -1,0 +1,4 @@
+$(document).ready(function() {
+	$("header").load("/ProjetoTrilhaWeb/admin/site/general/header.html");
+	$("footer").load("/ProjetoTrilhaWeb/admin/site/general/footer.html");
+});

@@ -1,0 +1,4 @@
+$(document).ready(function() {
+	$("header").load("/ProjetoTrilhaWeb/pages/site/general/cabecalho.html");
+	$("footer").load("/ProjetoTrilhaWeb/pages/site/general/rodape.html");
+});
