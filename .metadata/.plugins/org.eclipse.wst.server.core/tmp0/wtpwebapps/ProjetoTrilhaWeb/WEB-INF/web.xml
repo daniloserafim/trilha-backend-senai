@@ -4,7 +4,6 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
     id="WebApp_ID" version="2.5">
     <display-name>Coldigo Geladeiras</display-name>
-
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>
@@ -21,6 +20,7 @@
     		<param-name>jersey.config.server.provider.packages</param-name>
     		<param-value>br.com.coldigogeladeiras.rest</param-value>
     	</init-param>
+    	<load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
     	<servlet-name>Jersey REST Service</servlet-name>
