@@ -8,7 +8,7 @@ $(document).ready(function() {
 		$("section").empty();
 		$("section").load(pagename+"/", function(response, status, info) {
 			if (status == "error") {
-				var msg = "Houve um erro ao encontrar a página:"+ indo.status +" - "+ info.statusText;
+				var msg = "Houve um erro ao encontrar a página:"+ info.status +" - "+ info.statusText;
 				$("section").html(msg);
 			}
 		});

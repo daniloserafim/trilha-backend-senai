@@ -42,5 +42,5 @@ $(document).ready(function() {
 			}
 		});
 	}
-	COLDIGO.produto.carregaMarcas();
+	COLDIGO.produto.carregarMarcas();
 });
