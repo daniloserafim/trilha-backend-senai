@@ -15,6 +15,7 @@ $(document).ready(function() {
 					$("#selMarca").append(option);
 					
 					for(var i = 0; i < marcas.length; i++) {
+						console.log('entra ?')
 						var option = document.createElement("option");
 						option.setAttribute("value", marcas[i].id);
 						option.innerHTML = (marcas[i].nome);

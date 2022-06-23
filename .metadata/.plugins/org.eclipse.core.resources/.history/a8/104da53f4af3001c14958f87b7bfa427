@@ -18,7 +18,7 @@
 			<tr>
 				<th>Marca</th>
 				<td>
-					<select id="selMarca">
+					<select>
 						<option value="" class="buscando">Aguarde, buscando marcas...</option>
 					</select>
 				</td>

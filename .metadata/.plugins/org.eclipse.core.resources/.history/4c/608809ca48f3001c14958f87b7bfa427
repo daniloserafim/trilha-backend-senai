@@ -12,7 +12,7 @@ $(document).ready(function() {
 					var option = document.createElement("option");
 					option.setAttribute("value", "");
 					option.innerHTML = ("Escolha");
-					$("#selMarca").append(option);
+					$("#selMarca"),append(option);
 					
 					for(var i = 0; i < marcas.length; i++) {
 						var option = document.createElement("option");
