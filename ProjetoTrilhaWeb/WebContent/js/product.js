@@ -47,11 +47,11 @@ $(document).ready(function() {
 	COLDIGO.produto.cadastrar = function() {
 		
 		var produto = new Object();
-		produto.categoria = document.frmAppProduto.categoria.value;
+		produto.categoria = document.frmAddProduto.categoria.value;
 		produto.marcaId = document.frmAddProduto.marcaId.value;
 		produto.modelo = document.frmAddProduto.modelo.value;
 		produto.capacidade = document.frmAddProduto.capacidade.value;
-		procuto.valor = document.frmAddProduto.valor.value;
+		produto.valor = document.frmAddProduto.valor.value;
 		
 		if((produto.categoria == "") || (produto.marcaId == "") || (produto.modelo == "") || (produto.capacidade == "") || (produto.valor == "")) {
 			COLDIGO.exibirAviso("Preencha todos os campos!");
