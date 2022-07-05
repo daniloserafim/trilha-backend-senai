@@ -97,18 +97,17 @@ $(document).ready(function() {
 		"<th class='acoes'>Ações</th>" +
 		"</tr>";
 		
-		if (listaDeProdutos != undefined && listaDeProdutos.length > 0) {
-			console.log('anel')
-			for(var i = 0; i<listaDeProdutos.length; i++) {
+		if(listaDeProdutos != undefined && listaDeProdutos.legth > 0) {
+			for(var i = 0; i<listaDeProdutos.legth; i++) {
 				tabela += "<tr>" +
 				"<td>" + listaDeProdutos[i].categoria + "</td>" +
 				"<td>" + listaDeProdutos[i].marcaNome + "</td>" +
 				"<td>" + listaDeProdutos[i].modelo + "</td>" +
 				"<td>" + listaDeProdutos[i].capacidade + "</td>" +
-				"<td>R$" + COLDIGO.formatarDinheiro(listaDeProdutos[i].valor) + "</td>" +
+				"<td>R$" + listaDeProdutos[i].valor + "</td>" +
 				"<td>" +
-					"<a><img src='../../imgs/edit.png' alt='Editar registro'></a> " +
-					"<a><img src='../../imgs/delete.png' alt='Excluir registro'></a> " +
+					"<a><img> src='../../imgs/edit.png' alt='Editar registro'></a> " +
+					"<a><img> src='../../imgs/delete.png' alt='Excluir registro'></a> " +
 				"</td>" +
 				"</tr>"
 			}

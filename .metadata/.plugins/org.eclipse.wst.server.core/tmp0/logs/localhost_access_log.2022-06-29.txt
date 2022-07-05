@@ -20,3 +20,11 @@
 0:0:0:0:0:0:0:1 - - [29/Jun/2022:20:52:21 -0300] "GET /favicon.ico HTTP/1.1" 404 1047
 0:0:0:0:0:0:0:1 - - [29/Jun/2022:20:52:25 -0300] "GET /ProjetoTrilhaWeb/rest/produto/buscar?valorBusca= HTTP/1.1" 200 475
 0:0:0:0:0:0:0:1 - - [29/Jun/2022:20:52:25 -0300] "GET /ProjetoTrilhaWeb/rest/marca/buscar HTTP/1.1" 200 80
+0:0:0:0:0:0:0:1 - - [29/Jun/2022:21:23:12 -0300] "GET /ProjetoTrilhaWeb/pages/admin/ HTTP/1.1" 200 1014
+0:0:0:0:0:0:0:1 - - [29/Jun/2022:21:23:12 -0300] "GET /ProjetoTrilhaWeb/css/admin.css HTTP/1.1" 200 2800
+0:0:0:0:0:0:0:1 - - [29/Jun/2022:21:23:12 -0300] "GET /ProjetoTrilhaWeb/js/admin.js HTTP/1.1" 200 867
+0:0:0:0:0:0:0:1 - - [29/Jun/2022:21:23:12 -0300] "GET /ProjetoTrilhaWeb/css/jquery-ui.css HTTP/1.1" 200 36954
+0:0:0:0:0:0:0:1 - - [29/Jun/2022:21:23:12 -0300] "GET /ProjetoTrilhaWeb/js/jquery-ui.js HTTP/1.1" 200 529062
+0:0:0:0:0:0:0:1 - - [29/Jun/2022:21:23:13 -0300] "GET /favicon.ico HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [29/Jun/2022:21:23:15 -0300] "GET /ProjetoTrilhaWeb/rest/produto/buscar?valorBusca= HTTP/1.1" 200 475
+0:0:0:0:0:0:0:1 - - [29/Jun/2022:21:23:15 -0300] "GET /ProjetoTrilhaWeb/rest/marca/buscar HTTP/1.1" 200 80

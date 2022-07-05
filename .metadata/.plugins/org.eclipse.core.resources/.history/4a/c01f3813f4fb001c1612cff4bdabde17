@@ -105,7 +105,7 @@ $(document).ready(function() {
 				"<td>" + listaDeProdutos[i].marcaNome + "</td>" +
 				"<td>" + listaDeProdutos[i].modelo + "</td>" +
 				"<td>" + listaDeProdutos[i].capacidade + "</td>" +
-				"<td>R$" + COLDIGO.formatarDinheiro(listaDeProdutos[i].valor) + "</td>" +
+				"<td>R$" + listaDeProdutos[i].valor + "</td>" +
 				"<td>" +
 					"<a><img src='../../imgs/edit.png' alt='Editar registro'></a> " +
 					"<a><img src='../../imgs/delete.png' alt='Excluir registro'></a> " +
