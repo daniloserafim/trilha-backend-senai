@@ -86,17 +86,6 @@ public class ProdutoRest extends UtilRest {
 			JDBCProdutoDAO jdbcProduto = new JDBCProdutoDAO(conexao);
 			
 			boolean retorno = jdbcProduto.deletar(id);
-			
-			String msg = "";
-			if(retorno) {
-				msg = "Produto excluído com sucesso!";
-			} else {
-				msg = "Erro ao excluir produto!";
-			}
-			
-			conec.fecharConexao();
-			
-			return this.buildResponse(msg);
 		} catch(Exception e) {
 			e.printStackTrace();
 			return this.buildErrorResponse(e.getMessage());
