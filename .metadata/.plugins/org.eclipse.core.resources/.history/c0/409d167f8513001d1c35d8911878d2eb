@@ -97,7 +97,6 @@ public class ProdutoRest extends UtilRest {
 			conec.fecharConexao();
 			
 			return this.buildResponse(msg);
-			
 		} catch(Exception e) {
 			e.printStackTrace();
 			return this.buildErrorResponse(e.getMessage());

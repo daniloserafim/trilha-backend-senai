@@ -125,7 +125,7 @@ $(document).ready(function() {
 	COLDIGO.produto.excluir = function(id) {
 		$.ajax({
 			type:"DELETE",
-			url: COLDIGO.PATH + "produto/excluir/"+id,
+			url: COLDIGO.PATH + "/produto/excluir/"+id,
 			success: function(msg) {
 				COLDIGO.exibirAviso(msg);
 				COLDIGO.produto.buscar();
