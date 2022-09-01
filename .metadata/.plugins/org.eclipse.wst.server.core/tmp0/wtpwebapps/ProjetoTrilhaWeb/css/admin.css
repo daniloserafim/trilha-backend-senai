@@ -93,7 +93,7 @@ footer {
 	padding: 10px;
 }
 
-#modalAviso {
+#modalAviso, .modalEditar {
 	display: none;
 }
 

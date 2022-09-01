@@ -134,18 +134,4 @@ $(document).ready(function() {
 			}
 		});
 	};
-	
-	COLDIGO.produto.exibirEdicao = function(id) {
-		$.ajax({
-			type: "GET",
-			url: COLDIGO.PATH + "produto/buscaPorId",
-			data: "id="+id,
-			success: function(produto) {
-				
-			},
-			error: function(info) {
-				COLDIGO.exibirAviso("Erro ao buscar produto para edição: "+ info.status + " - " + info.statusText);
-			}
-		});
-	};
 });

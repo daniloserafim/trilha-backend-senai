@@ -115,9 +115,6 @@ public class ProdutoRest extends UtilRest {
 			Conexao conec = new Conexao();
 			Connection conexao = conec.abrirConexao();
 			JDBCProdutoDAO jdbcProduto = new JDBCProdutoDAO(conexao);
-			
-			produto = jdbcProduto.buscarPorId(id);
-			
 		} catch(Exception e) {
 			e.printStackTrace();
 			return this.buildErrorResponse(e.getMessage());

@@ -98,7 +98,6 @@ $(document).ready(function() {
 		"</tr>";
 		
 		if (listaDeProdutos != undefined && listaDeProdutos.length > 0) {
-			console.log('anel')
 			for(var i = 0; i<listaDeProdutos.length; i++) {
 				tabela += "<tr>" +
 				"<td>" + listaDeProdutos[i].categoria + "</td>" +
@@ -107,7 +106,7 @@ $(document).ready(function() {
 				"<td>" + listaDeProdutos[i].capacidade + "</td>" +
 				"<td>R$" + COLDIGO.formatarDinheiro(listaDeProdutos[i].valor) + "</td>" +
 				"<td>" +
-					"<a><img src='../../imgs/edit.png' alt='Editar registro'></a> " +
+					"<a onclick=\"COLDIGO.produto.exibirEdicao('"+listaDeProdutos[i].id+"')\"><img src='../../imgs/edit.png' alt='Editar registro'></a> " +
 					"<a onclick=\"COLDIGO.produto.excluir('"+listaDeProdutos[i].id+"')\"><img src='../../imgs/delete.png' alt='Excluir registro'></a> " +
 				"</td>" +
 				"</tr>"
@@ -132,6 +131,20 @@ $(document).ready(function() {
 			},
 			error: function(info) {
 				COLDIGO.exibirAviso("Erro ao excluir produto: "+ info.status +" - "+ info.statusText);
+			}
+		});
+	};
+	
+	COLDIGO.produto.exibirEdicao = function(id) {
+		$.ajax({
+			type: "GET",
+			url: COLDIGO.PATH + "produto/buscaPorId",
+			data: "id="+id,
+			success: function(produto) {
+				
+			},
+			error: function(info) {
+				COLDIGO.exibirAviso("Erro ao buscar produto para edição: "+ info.status + " - " + info.statusText);
 			}
 		});
 	};
