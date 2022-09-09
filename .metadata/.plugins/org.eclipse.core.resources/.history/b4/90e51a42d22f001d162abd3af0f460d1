@@ -36,27 +36,33 @@ public class Produto implements Serializable {
 		return this.marcaId;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setId(int id2) {
+		// TODO Auto-generated method stub
+		
 	}
 
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
+	public void setCategoria(String categoria2) {
+		// TODO Auto-generated method stub
+		
 	}
 
-	public void setMarcaId(int marcaId) {
-		this.marcaId = marcaId;
+	public void setMarcaId(int marcaId2) {
+		// TODO Auto-generated method stub
+		
 	}
 
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
+	public void setModelo(String modelo2) {
+		// TODO Auto-generated method stub
+		
 	}
 
-	public void setCapacidade(int capacidade) {
-		this.capacidade = capacidade;
+	public void setCapacidade(int capacidade2) {
+		// TODO Auto-generated method stub
+		
 	}
 
-	public void setValor(float valor) {
-		this.valor = valor;
+	public void setValor(float valor2) {
+		// TODO Auto-generated method stub
+		
 	}
 }

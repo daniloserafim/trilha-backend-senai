@@ -141,7 +141,7 @@ $(document).ready(function() {
 			url: COLDIGO.PATH + "produto/buscaPorId",
 			data: "id="+id,
 			success: function(produto) {
-				
+				console.log('nelson')
 			},
 			error: function(info) {
 				COLDIGO.exibirAviso("Erro ao buscar produto para edição: "+ info.status + " - " + info.statusText);
