@@ -50,7 +50,6 @@
 		</table>
 	</fieldset>
 </form>
-<div id="johnson"></div>
 <h3>Produtos registrados</h3>
 <form id="filtraProduto" class="frmFiltrar">
 	<fieldset>
@@ -62,7 +61,6 @@
 <div id="listaProdutos" class="listaRegistros">
 </div>
 <div id="modalEditaProduto" class="modalEditar">
-
 	<form name="frmEditaProduto" id="editaProduto" class="frmEditar">
 		<table>
 			<tr>

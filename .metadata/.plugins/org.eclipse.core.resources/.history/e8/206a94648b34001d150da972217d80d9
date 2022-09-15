@@ -156,6 +156,8 @@ $(document).ready(function() {
 					}
 				};
 				
+				console.log('anel')
+				
 				var modalEditaProduto = {
 					title: "Editar Produto",
 					height: 400,

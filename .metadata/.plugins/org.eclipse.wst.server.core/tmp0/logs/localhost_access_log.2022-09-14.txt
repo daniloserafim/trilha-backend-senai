@@ -1,0 +1,16 @@
+127.0.0.1 - - [14/Sep/2022:20:10:34 -0300] "GET / HTTP/1.1" 404 1036
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:11:56 -0300] "GET /ProjetoTrilhaWeb/pages/admin/ HTTP/1.1" 200 1014
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:11:56 -0300] "GET /ProjetoTrilhaWeb/css/admin.css HTTP/1.1" 200 2814
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:11:56 -0300] "GET /ProjetoTrilhaWeb/css/jquery-ui.css HTTP/1.1" 200 38269
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:11:56 -0300] "GET /ProjetoTrilhaWeb/js/admin.js HTTP/1.1" 200 999
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:11:56 -0300] "GET /ProjetoTrilhaWeb/js/jquery-ui.js HTTP/1.1" 200 548118
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:11:56 -0300] "GET /ProjetoTrilhaWeb/pages/admin/general/header.html HTTP/1.1" 200 976
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:11:56 -0300] "GET /ProjetoTrilhaWeb/pages/admin/general/footer.html HTTP/1.1" 200 38
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:11:56 -0300] "GET /favicon.ico HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:11:56 -0300] "GET /ProjetoTrilhaWeb/imgs/logo.png HTTP/1.1" 200 109630
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:11:58 -0300] "GET /ProjetoTrilhaWeb/pages/admin/product/ HTTP/1.1" 200 2526
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:11:58 -0300] "GET /ProjetoTrilhaWeb/js/product.js HTTP/1.1" 200 4872
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:12:00 -0300] "GET /ProjetoTrilhaWeb/rest/produto/buscar?valorBusca= HTTP/1.1" 200 125
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:12:00 -0300] "GET /ProjetoTrilhaWeb/rest/marca/buscar HTTP/1.1" 200 79
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:12:00 -0300] "GET /ProjetoTrilhaWeb/imgs/edit.png HTTP/1.1" 200 9720
+0:0:0:0:0:0:0:1 - - [14/Sep/2022:20:12:00 -0300] "GET /ProjetoTrilhaWeb/imgs/delete.png HTTP/1.1" 200 74232

@@ -142,6 +142,8 @@ $(document).ready(function() {
 			data: "id="+id,
 			success: function(produto) {
 				
+				console.log('picanha')
+				
 				document.frmEditaProduto.idProduto.value = produto.id;
 				document.frmEditaProduto.modelo.value = produto.modelo;
 				document.frmEditaProduto.capacidade.value = produto.capacidade;
@@ -155,6 +157,8 @@ $(document).ready(function() {
 						selCategoria.options[i].removeAttribute("selected");
 					}
 				};
+				
+				console.log('farofa')
 				
 				var modalEditaProduto = {
 					title: "Editar Produto",
@@ -173,8 +177,9 @@ $(document).ready(function() {
 						
 					}
 				};
-				
-				$("#modalEditaProduto").dialog(modalEditaProduto);
+				console.log('salada')
+				$("johnson").html('xeleleu');
+				console.log('sorvete')
 			},
 			error: function(info) {
 				COLDIGO.exibirAviso("Erro ao buscar produto para edição: "+ info.status + " - " + info.statusText);

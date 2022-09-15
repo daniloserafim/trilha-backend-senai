@@ -154,7 +154,7 @@ $(document).ready(function() {
 					} else {
 						selCategoria.options[i].removeAttribute("selected");
 					}
-				};
+				}
 				
 				var modalEditaProduto = {
 					title: "Editar Produto",
@@ -174,7 +174,7 @@ $(document).ready(function() {
 					}
 				};
 				
-				$("#modalEditaProduto").dialog(modalEditaProduto);
+				$("modalEditaProduto").dialog(modalEditaProduto);
 			},
 			error: function(info) {
 				COLDIGO.exibirAviso("Erro ao buscar produto para edição: "+ info.status + " - " + info.statusText);
