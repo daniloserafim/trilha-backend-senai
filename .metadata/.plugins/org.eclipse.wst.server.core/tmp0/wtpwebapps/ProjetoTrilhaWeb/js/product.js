@@ -1,44 +1,53 @@
 COLDIGO.produto = new Object();
 
 $(document).ready(function() {
-	COLDIGO.produto.carregarMarcas = function() {
+	COLDIGO.produto.carregarMarcas = function(id) {
+		if (id != undefined) {
+			select = "#selMarcaEdicao";
+		} else {
+			select = "#selMarca";
+		}
 		alert("Tentando buscar marcas");
 		$.ajax({
 			type: "GET",
 			url: COLDIGO.PATH + "/marca/buscar",
 			success: function(marcas) {
 				if(marcas != "") {
-					$("#selMarca").html("");
+					$(select).html("");
 					var option = document.createElement("option");
 					option.setAttribute("value", "");
 					option.innerHTML = ("Escolha");
-					$("#selMarca").append(option);
+					$(select).append(option);
 					
 					for(var i = 0; i < marcas.length; i++) {
 						var option = document.createElement("option");
 						option.setAttribute("value", marcas[i].id);
+						
+						if ((id != undefined) && (id == marcas[i].id))
+							option.setAttribute("selected", "selected");
+						
 						option.innerHTML = (marcas[i].nome);
-						$("#selMarca").append(option);
+						$(select).append(option);
 					}
 				} else {
-					$("#selMarca").html("");
+					$(select).html("");
 					
 					var option = document.createElement("option");
 					option.setAttribute("value", "");
 					option.innerHTML = ("Cadastre uma marca primeiro!");
-					$("#selMarca").append(option);
-					$("#selMarca").addClass("aviso");
+					$(select).append(option);
+					$(select).addClass("aviso");
 				}
 			},
 			error: function(info) {
 				COLDIGO.exibirAviso("Erro ao buscar as marcas: " + info.status + " - " + info.statusText);
 				
-				$("#selMarca").html("");
+				$(select).html("");
 				var option = document.createElement("option");
 				option.setAttribute("value", "");
 				option.innerHTML = ("Erro ao carregar marcas!");
-				$("#selMarca").append(option);
-				$("#selMarca").addClass("aviso");
+				$(select).append(option);
+				$(select).addClass("aviso");
 			}
 		});
 	}
@@ -155,6 +164,8 @@ $(document).ready(function() {
 						selCategoria.options[i].removeAttribute("selected");
 					}
 				};
+				
+				COLDIGO.produto.carregarMarcas(produto.marcaId);
 				
 				var modalEditaProduto = {
 					title: "Editar Produto",
