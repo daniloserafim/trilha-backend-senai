@@ -203,6 +203,6 @@ $(document).ready(function() {
 		produto.capacidade = document.frmEditaProduto.capacidade.value;
 		produto.valor = document.frmEditaProduto.valor.value;
 		
-		$.ajax
+		$.a
 	};
 });

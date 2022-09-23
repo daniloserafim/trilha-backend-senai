@@ -202,7 +202,5 @@ $(document).ready(function() {
 		produto.modelo = document.frmEditaProduto.modelo.value;
 		produto.capacidade = document.frmEditaProduto.capacidade.value;
 		produto.valor = document.frmEditaProduto.valor.value;
-		
-		$.ajax
 	};
 });
