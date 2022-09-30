@@ -233,7 +233,7 @@
                 <tags>categoryTag:Java</tags>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_WsthNzSLEe2A-pLpM9-MCQ" containerData="7584" selectedElement="_WsthODSLEe2A-pLpM9-MCQ">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_WsthNzSLEe2A-pLpM9-MCQ" containerData="7584" selectedElement="_WsthQjSLEe2A-pLpM9-MCQ">
               <children xsi:type="basic:PartSashContainer" xmi:id="_WsthODSLEe2A-pLpM9-MCQ" containerData="7500" selectedElement="_WsthOTSLEe2A-pLpM9-MCQ" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_WsthOTSLEe2A-pLpM9-MCQ" elementId="org.eclipse.ui.editorss" containerData="9000" ref="_WsuI_TSLEe2A-pLpM9-MCQ"/>
                 <children xsi:type="basic:PartStack" xmi:id="_WsthOjSLEe2A-pLpM9-MCQ" elementId="org.eclipse.debug.internal.ui.OutlineFolderView" containerData="1000" selectedElement="_WsthOzSLEe2A-pLpM9-MCQ">
@@ -269,6 +269,7 @@
                 </children>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_WsthQjSLEe2A-pLpM9-MCQ" elementId="org.eclipse.debug.internal.ui.ToolsFolderView" containerData="2500" selectedElement="_WsthTTSLEe2A-pLpM9-MCQ">
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_WsthQzSLEe2A-pLpM9-MCQ" elementId="org.eclipse.ui.console.ConsoleView" ref="_WsuJiDSLEe2A-pLpM9-MCQ" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -352,10 +353,9 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_WsuI_TSLEe2A-pLpM9-MCQ" elementId="org.eclipse.ui.editorss" selectedElement="_WsuI_jSLEe2A-pLpM9-MCQ">
-      <children xsi:type="basic:PartStack" xmi:id="_WsuI_jSLEe2A-pLpM9-MCQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_3Not8DrTEe2Ra7n97gsDBg">
+      <children xsi:type="basic:PartStack" xmi:id="_WsuI_jSLEe2A-pLpM9-MCQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_WsuJIDSLEe2A-pLpM9-MCQ">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_WsuI_zSLEe2A-pLpM9-MCQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="index.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.html&quot; partName=&quot;index.html&quot; title=&quot;index.html&quot; tooltip=&quot;ProjetoTrilhaWeb/WebContent/pages/admin/index.html&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProjetoTrilhaWeb/WebContent/pages/admin/index.html&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;681&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -393,7 +393,7 @@
           <tags>org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_WsuJGTSLEe2A-pLpM9-MCQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="JDBCProdutoDAO.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;JDBCProdutoDAO.java&quot; partName=&quot;JDBCProdutoDAO.java&quot; title=&quot;JDBCProdutoDAO.java&quot; tooltip=&quot;ProjetoTrilhaWeb/src/br/com/coldigogeladeiras/jdbc/JDBCProdutoDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProjetoTrilhaWeb/src/br/com/coldigogeladeiras/jdbc/JDBCProdutoDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3494&quot; selectionTopPixel=&quot;1329&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;JDBCProdutoDAO.java&quot; partName=&quot;JDBCProdutoDAO.java&quot; title=&quot;JDBCProdutoDAO.java&quot; tooltip=&quot;ProjetoTrilhaWeb/src/br/com/coldigogeladeiras/jdbc/JDBCProdutoDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProjetoTrilhaWeb/src/br/com/coldigogeladeiras/jdbc/JDBCProdutoDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;4374&quot; selectionTopPixel=&quot;1725&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
@@ -435,7 +435,7 @@
           <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_WsuJIDSLEe2A-pLpM9-MCQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ProdutoRest.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ProdutoRest.java&quot; partName=&quot;ProdutoRest.java&quot; title=&quot;ProdutoRest.java&quot; tooltip=&quot;ProjetoTrilhaWeb/src/br/com/coldigogeladeiras/rest/ProdutoRest.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProjetoTrilhaWeb/src/br/com/coldigogeladeiras/rest/ProdutoRest.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3258&quot; selectionTopPixel=&quot;1179&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ProdutoRest.java&quot; partName=&quot;ProdutoRest.java&quot; title=&quot;ProdutoRest.java&quot; tooltip=&quot;ProjetoTrilhaWeb/src/br/com/coldigogeladeiras/rest/ProdutoRest.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProjetoTrilhaWeb/src/br/com/coldigogeladeiras/rest/ProdutoRest.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;4005&quot; selectionTopPixel=&quot;1659&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
@@ -447,7 +447,7 @@
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_WsuJIjSLEe2A-pLpM9-MCQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ProdutoDAO.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ProdutoDAO.java&quot; partName=&quot;ProdutoDAO.java&quot; title=&quot;ProdutoDAO.java&quot; tooltip=&quot;ProjetoTrilhaWeb/src/br/com/coldigogeladeiras/jdbcinterface/ProdutoDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProjetoTrilhaWeb/src/br/com/coldigogeladeiras/jdbcinterface/ProdutoDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;366&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ProdutoDAO.java&quot; partName=&quot;ProdutoDAO.java&quot; title=&quot;ProdutoDAO.java&quot; tooltip=&quot;ProjetoTrilhaWeb/src/br/com/coldigogeladeiras/jdbcinterface/ProdutoDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProjetoTrilhaWeb/src/br/com/coldigogeladeiras/jdbcinterface/ProdutoDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;409&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
@@ -459,12 +459,10 @@
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_3Not8DrTEe2Ra7n97gsDBg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="product.js" iconURI="platform:/plugin/org.eclipse.ui.genericeditor/icons/full/obj16/generic_editor.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ui.genericeditor.GenericEditor&quot; name=&quot;product.js&quot; partName=&quot;product.js&quot; title=&quot;product.js&quot; tooltip=&quot;ProjetoTrilhaWeb/WebContent/js/product.js&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProjetoTrilhaWeb/WebContent/js/product.js&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;6085&quot; selectionTopPixel=&quot;2700&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ui.genericeditor.GenericEditor&quot; name=&quot;product.js&quot; partName=&quot;product.js&quot; title=&quot;product.js&quot; tooltip=&quot;ProjetoTrilhaWeb/WebContent/js/product.js&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProjetoTrilhaWeb/WebContent/js/product.js&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;6838&quot; selectionTopPixel=&quot;2844&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.ui.genericeditor.GenericEditor</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -528,6 +526,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:Server</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_WsuJSjSLEe2A-pLpM9-MCQ" elementId="org.eclipse.wst.server.ui.ServersView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -576,7 +576,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>highlighted</tags>
       <menus xmi:id="_WsuJiTSLEe2A-pLpM9-MCQ" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -740,7 +739,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_WsuJ2zSLEe2A-pLpM9-MCQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_hz3UBzrTEe2Ra7n97gsDBg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_WsxNjzSLEe2A-pLpM9-MCQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_4BtpR0BEEe2h5_39ubje6Q" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_WsxNjzSLEe2A-pLpM9-MCQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_WsuJ6DSLEe2A-pLpM9-MCQ" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -777,7 +776,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_WsuvbjSLEe2A-pLpM9-MCQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_h0BFATrTEe2Ra7n97gsDBg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_WsxNNjSLEe2A-pLpM9-MCQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_4BtpVEBEEe2h5_39ubje6Q" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_WsxNNjSLEe2A-pLpM9-MCQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_WsuvezSLEe2A-pLpM9-MCQ" elementId="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" visible="false">
         <tags>Draggable</tags>

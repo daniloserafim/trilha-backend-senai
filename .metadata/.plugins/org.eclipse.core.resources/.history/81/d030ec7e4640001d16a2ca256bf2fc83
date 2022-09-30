@@ -203,16 +203,6 @@ $(document).ready(function() {
 		produto.capacidade = document.frmEditaProduto.capacidade.value;
 		produto.valor = document.frmEditaProduto.valor.value;
 		
-		$.ajax({
-			type: "PUT",
-			url: COLDIGO.PATH + "produto/alterar",
-			data: JSON.stringify(produto),
-			success: function(msg) {
-				
-			},
-			error: function(info) {
-				COLDIGO.exibirAviso("Erro ao editar produto: " + info.status + " - " + info.statusText);
-			}
-		})
+		$.ajax
 	};
 });

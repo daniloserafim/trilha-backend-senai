@@ -22,4 +22,5 @@
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="javax.ws.rs.DELETE"/>
     <fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
+    <fullyQualifiedTypeName name="javax.ws.rs.PUT"/>
 </qualifiedTypeNameHistroy>
