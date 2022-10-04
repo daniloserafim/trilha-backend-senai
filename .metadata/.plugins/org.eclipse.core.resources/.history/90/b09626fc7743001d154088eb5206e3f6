@@ -202,6 +202,7 @@ $(document).ready(function() {
 		produto.modelo = document.frmEditaProduto.modelo.value;
 		produto.capacidade = document.frmEditaProduto.capacidade.value;
 		produto.valor = document.frmEditaProduto.valor.value;
+		console.log('james')
 		$.ajax({
 			type: "PUT",
 			url: COLDIGO.PATH + "/produto/alterar",
