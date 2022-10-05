@@ -108,7 +108,7 @@ public class JDBCProdutoDAO implements ProdutoDAO {
 			PreparedStatement p = this.conexao.prepareStatement(comando);
 			p.setInt(1, id);
 			ResultSet rs = p.executeQuery();
-			while (rs.next()) {
+			if (rs.next()) {
 				
 				String categoria = rs.getString("categoria");
 				String modelo = rs.getString("modelo");

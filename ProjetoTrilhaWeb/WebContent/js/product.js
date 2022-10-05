@@ -7,7 +7,7 @@ $(document).ready(function() {
 		} else {
 			select = "#selMarca";
 		}
-		alert("Tentando buscar marcas");
+
 		$.ajax({
 			type: "GET",
 			url: COLDIGO.PATH + "/marca/buscar",

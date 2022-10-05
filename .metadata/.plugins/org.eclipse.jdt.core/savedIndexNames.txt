@@ -8,7 +8,7 @@ INDEX VERSION 1.131+C:\Users\danilo_serafim\Desktop\danilo\trilha-backend-senai\
 3615049508.index
 906588630.index
 2892840575.index
-744611686.index
+1023850092.index
 124953900.index
 889996952.index
 3688659984.index
@@ -18,11 +18,11 @@ INDEX VERSION 1.131+C:\Users\danilo_serafim\Desktop\danilo\trilha-backend-senai\
 630390334.index
 322944043.index
 1693024788.index
-3023042214.index
+1512597062.index
 342610087.index
 3086912154.index
 3042022459.index
-1512597062.index
+3023042214.index
 2704919972.index
 2338214201.index
 3329437771.index
@@ -35,6 +35,7 @@ INDEX VERSION 1.131+C:\Users\danilo_serafim\Desktop\danilo\trilha-backend-senai\
 4285339495.index
 2994275588.index
 4255883135.index
+414085062.index
 206146778.index
 4022903354.index
 3341451126.index
@@ -54,4 +55,4 @@ INDEX VERSION 1.131+C:\Users\danilo_serafim\Desktop\danilo\trilha-backend-senai\
 2337619533.index
 3962731659.index
 3342492988.index
-1023850092.index
+744611686.index
