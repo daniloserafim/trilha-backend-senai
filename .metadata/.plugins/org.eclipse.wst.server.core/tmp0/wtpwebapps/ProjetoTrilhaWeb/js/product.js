@@ -78,7 +78,8 @@ $(document).ready(function() {
 				}
 			});
 		}
-	}
+	};
+	
 	COLDIGO.produto.buscar = function() {
 		var valorBusca = $("#campoBuscaProduto").val();
 		
@@ -95,6 +96,7 @@ $(document).ready(function() {
 			}
 		});
 	};
+	
 	COLDIGO.produto.exibir = function(listaDeProdutos) {
 		var tabela = "<table>" +
 		"<tr>" +

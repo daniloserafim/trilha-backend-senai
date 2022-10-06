@@ -6,14 +6,14 @@
 		<legend>Nova Marca</legend>
 		<table>
 			<tr>
-				<th>Modelo</th>
+				<th>Nome</th>
 				<td>
-					<input type="text" name="modelo">
+					<input type="text" name="nome">
 				</td>
 			</tr>
 			<tr>
 				<td colspan="2">
-					<button type="button" onClick="COLDIGO.produto.cadastrar()">Cadastrar</button>
+					<button type="button" onClick="COLDIGO.marca.cadastrar()">Cadastrar</button>
 					<button type="reset">Limpar</button>
 				</td>
 			</tr>
@@ -21,57 +21,27 @@
 	</fieldset>
 </form>
 <div id="johnson"></div>
-<h3>Produtos registrados</h3>
-<form id="filtraProduto" class="frmFiltrar">
+<h3>Marcas registradas</h3>
+<form id="filtraMarca" class="frmFiltrar">
 	<fieldset>
 		<legend>Filtrar</legend>
-		<input type="text" name="txtbusca" id="campoBuscaProduto" placeholder="Pesquise pelo modelo">
-		<button type="button" onclick="COLDIGO.produto.buscar()">Buscar</button>
+		<input type="text" name="txtbusca" id="campoBuscaMarca" placeholder="Pesquise pelo nome">
+		<button type="button" onclick="COLDIGO.marca.buscar()">Buscar</button>
 	</fieldset>
 </form>
-<div id="listaProdutos" class="listaRegistros">
+<div id="listaMarcas" class="listaRegistros">
 </div>
-<div id="modalEditaProduto" class="modalEditar">
+<div id="modalEditaMarca" class="modalEditar">
 
-	<form name="frmEditaProduto" id="editaProduto" class="frmEditar">
+	<form name="frmEditaMarca" id="editaMarca" class="frmEditar">
 		<table>
 			<tr>
-				<th>Categoria</th>
+				<th>Nome</th>
 				<td>
-					<select name="categoria" id="selCategoriaEdicao">
-						<option value="">Selecione</option>
-						<option value="1">Geladeira</option>
-						<option value="2">Freezer</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<th>Marca</th>
-				<td>
-					<select name="marcaId" id="selMarcaEdicao">
-						<option value="" class="buscando">Aguarde, buscando marca...</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<th>Modelo</th>
-				<td>
-					<input type="text" name="modelo">
-				</td>
-			</tr>
-			<tr>
-				<th>Capacidade (l)</th>
-				<td>
-					<input type="text" name="capacidade">
-				</td>
-			</tr>
-			<tr>
-				<th>Valor (R$)</th>
-				<td>
-					<input type="text" name="valor">
+					<input type="text" name="nome">
 				</td>
 			</tr>
 		</table>
-		<input type="hidden" name="idProduto">
+		<input type="hidden" name="idMarca">
 	</form>
 </div>
