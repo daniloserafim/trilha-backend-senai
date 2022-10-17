@@ -1,5 +1,6 @@
 package br.com.coldigogeladeiras.rest;
 
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
@@ -109,15 +110,19 @@ public class MarcaRest extends UtilRest {
 			Connection conexao = conec.abrirConexao();
 			JDBCMarcaDAO jdbcMarca = new JDBCMarcaDAO(conexao);
 			
-			boolean retorno = jdbcMarca.deletar(id);
+			String msg = jdbcMarca.verificarParaExclusao(id);
 			
-			String msg = "";
-			if(retorno) {
-				msg = "Marca excluída com sucesso!";
-			} else {
-				msg = "Erro ao excluir marca!";
+			if (msg == null) {
+				
+				if (jdbcMarca.deletar(id)) {
+					
+					msg = "Marca excluída com sucesso!";
+				} else {
+					
+					msg = "Erro ao excluir marca!";
+				}
 			}
-			
+		
 			conec.fecharConexao();
 			
 			return this.buildResponse(msg);

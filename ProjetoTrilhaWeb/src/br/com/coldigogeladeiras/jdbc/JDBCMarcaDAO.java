@@ -151,4 +151,30 @@ public class JDBCMarcaDAO implements MarcaDAO {
 		}
 		return true;
 	}
+	
+	public String verificarParaExclusao(int id) {
+		
+		
+		if (this.buscaPorId(id).getNome() == null) {
+			
+			return "Essa marca não existe! Recarregue a página para atualizar os registros.";
+		};
+		
+		String comando = "SELECT * FROM produtos WHERE marcas_id = ?";
+		
+		PreparedStatement p;
+		try {
+			p = this.conexao.prepareStatement(comando);
+			p.setInt(1, id);
+			ResultSet rs = p.executeQuery();
+			if (rs.next()) {
+				
+				return "Essa marca não pode ser excluída pois possui produtos vinculados a ela!";
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
 }
