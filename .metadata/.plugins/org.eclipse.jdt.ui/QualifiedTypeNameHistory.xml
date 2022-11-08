@@ -7,7 +7,6 @@
     <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
     <fullyQualifiedTypeName name="br.com.coldigogeladeiras.jdbcinterface.MarcaDAO"/>
     <fullyQualifiedTypeName name="java.beans.Statement"/>
-    <fullyQualifiedTypeName name="br.com.coldigogeladeiras.jdbc.JDBCMarcaDAO"/>
     <fullyQualifiedTypeName name="br.com.coldigogeladeiras.modelo.Marca"/>
     <fullyQualifiedTypeName name="br.com.coldigogeladeiras.bd.Conexao"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
@@ -23,4 +22,6 @@
     <fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
     <fullyQualifiedTypeName name="javax.ws.rs.PUT"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="br.com.coldigogeladeiras.jdbc.JDBCMarcaDAO"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

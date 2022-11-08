@@ -38,9 +38,11 @@ public class JDBCMarcaDAO implements MarcaDAO {
 				
 				int id = rs.getInt("id");
 				String nome = rs.getString("nome");
+				boolean status = rs.getBoolean("status");
 				
 				marca.setId(id);
 				marca.setNome(nome);
+				marca.setStatus(status);
 				
 				listMarcas.add(marca);
 			}
@@ -69,15 +71,15 @@ public class JDBCMarcaDAO implements MarcaDAO {
 		return true;
 	}
 	
-	public List<JsonObject> buscarPorNome(String nome) {
+	public List<Marca> buscarPorNome(String nome) {
 		String comando = "SELECT marcas.*, marcas.nome as marca FROM marcas ";
 		
 		if(!nome.equals("")) {
 			comando += "WHERE nome LIKE '%" + nome + "%' ";
 		}
 		
-		List<JsonObject> listaMarcas = new ArrayList<JsonObject>();
-		JsonObject marca = null;
+		List<Marca> listaMarcas = new ArrayList<Marca>();
+		Marca marca = null;
 		
 		try {
 			Statement stmt = conexao.createStatement();
@@ -86,10 +88,12 @@ public class JDBCMarcaDAO implements MarcaDAO {
 			while (rs.next()) {
 				int id = rs.getInt("id");
 				String name = rs.getString("nome");
+				boolean status = rs.getBoolean("status");
 				
-				marca = new JsonObject();
-				marca.addProperty("id", id);
-				marca.addProperty("nome", name);
+				marca = new Marca();
+				marca.setId(id);
+				marca.setNome(name);
+				marca.setStatus(status);
 				
 				listaMarcas.add(marca);
 			}
@@ -124,9 +128,11 @@ public class JDBCMarcaDAO implements MarcaDAO {
 			if (rs.next()) {
 				
 				String nome = rs.getString("nome");
+				boolean status = rs.getBoolean("status");
 				
 				marca.setId(id);
 				marca.setNome(nome);
+				marca.setStatus(status);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -137,8 +143,8 @@ public class JDBCMarcaDAO implements MarcaDAO {
 	public boolean alterar(Marca marca) {
 		
 		String comando = "UPDATE marcas "
-				+ "SET nome=?"
-				+ " WHERE id=?";
+				+ "SET nome = ?"
+				+ " WHERE id = ?";
 		PreparedStatement p;
 		try {
 			p = this.conexao.prepareStatement(comando);
@@ -176,5 +182,31 @@ public class JDBCMarcaDAO implements MarcaDAO {
 		}
 		
 		return null;
+	}
+	
+	public boolean alterarStatus(String marcaId) {
+		
+		boolean newStatus;
+		
+		if (this.buscaPorId(Integer.parseInt(marcaId)).getStatus()) {
+			newStatus = false;
+		} else {
+			newStatus = true;
+		};
+		
+		String comando = "UPDATE marcas "
+				+ "SET status = ?"
+				+ " WHERE id = ?";
+		PreparedStatement p;
+		try {
+			p = this.conexao.prepareStatement(comando);
+			p.setBoolean(1, newStatus);
+			p.setString(2, marcaId);
+			p.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
 	}
 }

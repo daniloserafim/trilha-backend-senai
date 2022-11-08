@@ -1,6 +1,11 @@
 COLDIGO.marca = new Object();
 
 $(document).ready(function() {	
+	
+	$("#addMarca").submit(function(event){
+	   event.preventDefault();
+	});
+
 	COLDIGO.marca.cadastrar = function() {
 		var marca = new Object();
 		marca.nome = document.frmAddMarca.nome.value;
@@ -15,6 +20,7 @@ $(document).ready(function() {
 				success: function(msg) {
 					COLDIGO.exibirAviso(msg);
 					$("#addMarca").trigger("reset");
+					COLDIGO.marca.buscar();
 				},
 				error: function(info) {
 					COLDIGO.exibirAviso("Erro ao cadastrar uma nova marca "+ info.status +" - "+ info.statusText);
@@ -49,16 +55,18 @@ $(document).ready(function() {
 		
 		if (listaDeMarcas != undefined && listaDeMarcas.length > 0) {
 			for(var i = 0; i<listaDeMarcas.length; i++) {
+				let isChecked = listaDeMarcas[i].status ? "checked" : "";
 				tabela += "<tr>" +
 				"<td>" + listaDeMarcas[i].nome + "</td>" +
 				"<td>" +
 					"<a onclick=\"COLDIGO.marca.exibirEdicao('"+listaDeMarcas[i].id+"')\"><img src='../../imgs/edit.png' alt='Editar registro'></a> " +
 					"<a onclick=\"COLDIGO.marca.excluir('"+listaDeMarcas[i].id+"')\"><img src='../../imgs/delete.png' alt='Excluir registro'></a> " +
+					"<label class='switch'><input id='marca"+listaDeMarcas[i].id+"' "+ isChecked +" type='checkbox'><span onclick='COLDIGO.marca.mudarStatus("+listaDeMarcas[i].id+")' class='slider round'></span></label>" +
 				"</td>" +
 				"</tr>"
 			}
 		} else if (listaDeMarcas == ""){
-			tabela += "<tr><td colspan='6'>Nenhum registro encontrado</td></tr>";
+			tabela += "<tr><td colspan='3'>Nenhum registro encontrado</td></tr>";
 		}
 		tabela += "</table>";
 		
@@ -136,4 +144,21 @@ $(document).ready(function() {
 			}
 		})
 	};
+	
+	COLDIGO.marca.mudarStatus = function(marcaId) {
+		
+		$.ajax({
+			type: "PUT",
+			url: COLDIGO.PATH + "/marca/alterarStatus",
+			data: JSON.stringify(marcaId),
+			success: function(msg) {
+				COLDIGO.exibirAviso(msg);
+				COLDIGO.marca.buscar();
+			},
+			error: function(info) {
+				COLDIGO.exibirAviso("Erro ao alterar o status da marca: " + info.status + " - " + info.statusText);
+				$("#marca"+marcaId).prop("checked", !$("#marca"+marcaId).prop("checked"));
+			}
+		})
+	}
 });

@@ -55,7 +55,7 @@ public class MarcaRest extends UtilRest {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response buscarCoisarada(@QueryParam("valorBusca") String nome) {
 		try {
-			List<JsonObject> listaMarcas = new ArrayList<JsonObject>();
+			List<Marca> listaMarcas = new ArrayList<Marca>();
 			
 			Conexao conec = new Conexao();
 			Connection conexao = conec.abrirConexao();
@@ -82,6 +82,13 @@ public class MarcaRest extends UtilRest {
 			Connection conexao = conec.abrirConexao();
 			
 			JDBCMarcaDAO jdbcMarca = new JDBCMarcaDAO(conexao);
+			
+			List<Marca> marcaIgual = jdbcMarca.buscarPorNome(marca.getNome());
+			
+			if (!marcaIgual.isEmpty()) {
+				return this.buildResponse("Erro. Essa marca já está cadastrada!");
+			}
+			
 			boolean retorno = jdbcMarca.inserir(marca);
 			String msg = "";
 			
@@ -174,6 +181,32 @@ public class MarcaRest extends UtilRest {
 				msg = "Marca alterado com sucesso!";
 			} else {
 				msg = "Erro ao alterar marca.";
+			}
+			
+			conec.fecharConexao();
+			return this.buildResponse(msg);
+		} catch(Exception e) {
+			e.printStackTrace();
+			return this.buildErrorResponse(e.getMessage());
+		}
+	}
+	
+	@PUT
+	@Path("/alterarStatus")
+	@Consumes("application/*")
+	public Response alterarStatus(String marcaId) {
+		try {
+			Conexao conec = new Conexao();
+			Connection conexao = conec.abrirConexao();
+			JDBCMarcaDAO jdbcMarca = new JDBCMarcaDAO(conexao);
+			
+			boolean retorno = jdbcMarca.alterarStatus(marcaId);
+			
+			String msg = "";
+			if (retorno) {
+				msg = "Status da marca alterado com sucesso!";
+			} else {
+				msg = "Erro ao alterar status da marca.";
 			}
 			
 			conec.fecharConexao();

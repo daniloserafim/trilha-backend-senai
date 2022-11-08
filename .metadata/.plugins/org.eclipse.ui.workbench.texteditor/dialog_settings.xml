@@ -5,21 +5,21 @@
 		<item key="DIALOG_Y_ORIGIN" value="247"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="listaProdutos"/>
+		<item key="selection" value="$(&quot;.switch&quot;).(() =&gt; {"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="listaProdutos"/>
-			<item value="produto"/>
+			<item value="$(&quot;.switch&quot;).(() =&gt; {"/>
+			<item value="checked"/>
+			<item value="checked&apos;"/>
+			<item value="acoes"/>
+			<item value="ações"/>
 			<item value="cadastrar"/>
-			<item value="modalEditaProduto"/>
-			<item value="modaleditaproduto"/>
-			<item value="modal"/>
-			<item value="buscando"/>
-			<item value="append"/>
+			<item value="buscarPorNome"/>
+			<item value="&#x09;&#x09;List&lt;JsonObject&gt; listaMarcas = new ArrayList&lt;JsonObject&gt;();"/>
 		</list>
 		<list key="replacehistory">
 		</list>

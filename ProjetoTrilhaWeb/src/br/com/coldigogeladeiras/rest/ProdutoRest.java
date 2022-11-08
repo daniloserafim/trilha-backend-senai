@@ -19,6 +19,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
 import br.com.coldigogeladeiras.bd.Conexao;
+import br.com.coldigogeladeiras.jdbc.JDBCMarcaDAO;
 import br.com.coldigogeladeiras.jdbc.JDBCProdutoDAO;
 import br.com.coldigogeladeiras.modelo.Produto;
 
@@ -33,15 +34,33 @@ public class ProdutoRest extends UtilRest {
 			Conexao conec = new Conexao();
 			Connection conexao = conec.abrirConexao();
 			
-			JDBCProdutoDAO jdbcProduto = new JDBCProdutoDAO(conexao);
-			boolean retorno = jdbcProduto.inserir(produto);
 			String msg = "";
 			
-			if(retorno) {
-				msg = "Produto cadastrado com sucesso!";
+			JDBCMarcaDAO jdbcMarca = new JDBCMarcaDAO(conexao);
+			
+			if (jdbcMarca.buscaPorId(produto.getMarcaId()).getNome() == null) {
+				
+				msg = "Essa marca não existe! Recarregue a página para atualizar os registros.";
 			} else {
-				msg = "Erro ao cadastrar produto.";
+				
+				JDBCProdutoDAO jdbcProduto = new JDBCProdutoDAO(conexao);
+
+				List<JsonObject> produtoIgual = jdbcProduto.buscarPorNome(produto.getModelo());
+				
+				if (!produtoIgual.isEmpty()) {
+					return this.buildResponse("Erro. Esse produto já está cadastrado!");
+				}
+				
+				boolean retorno = jdbcProduto.inserir(produto);
+				
+				if(retorno) {
+					msg = "Produto cadastrado com sucesso!";
+				} else {
+					msg = "Erro ao cadastrar produto.";
+				}
 			}
+			
+			
 			
 			conec.fecharConexao();
 			
